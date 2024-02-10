@@ -1,0 +1,296 @@
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section h2.section-head{
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2.section-head:after{
+    content: "";
+    background: #e74c3c;
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+/* ------------------------------------------------------------ */
+
+/* header */
+
+#header{
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#logo{
+    font-size: 2rem;
+    margin-top: 5px;
+    color: #000;
+}
+
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#menu li{
+   display: inline-block;
+}
+
+#menu li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#menu li a:hover{
+    background: #c0392b;
+}
+
+/* banner */
+
+#banner{
+    background: url(media/banner-image.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+.banner-title{
+    padding-top: 6rem;
+}
+
+.banner-title h1{
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+.banner-title p.lead{
+    color: #fff;
+    background: rgba(231, 76, 60, 0.5);
+    padding: 10px;
+}
+
+.service-box{
+    text-align: center;
+}
+
+.service-box i{
+    color: #e74c3c;
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+/* testimonial-section */
+
+#testimonials{
+    color: #fff;
+    background: url(media/testimonial-bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    padding: 50px 0;
+    position: relative;
+}
+
+/* #testimonials::before{
+    background: rgba(52, 73, 94, 0.7);
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.testimonial img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* News */
+
+#news .news-post img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.news-post h3{
+    font-size: 1.35rem;
+}
+
+.news-post h3 a{
+    color: #e74c3c;
+}
+
+.post-date{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.post-date:before{
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.news-post a.readmore{
+    font-size: 14px;
+    color: #e74c3c;
+}
+
+.news-post a.readmore::after{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+
+/* footer-sidebar */
+
+#footer-sidebar{
+    color: #fff;
+    background: #34495e;
+    padding: 20px 0;
+}
+
+.footer-widget h4:after{
+    content: "";
+    background: #fff;
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 10px 5px;
+}
+
+.footer-widget a{
+    color: #fff;
+}
+
+.latest-news{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.latest-news li{
+    margin-bottom: 3px; 
+}
+
+.latest-news li::before{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+/* footer */
+
+#footer{
+    color: #fff;
+    background: #2c3e50;
+    padding: 10px 0;
+}
+
+#footer .copyright{
+    margin-top: 5px;
+}
+
+#footer .copyright a{
+    color: #fff;
+}
+
+#footer .copyright a:hover{
+    color: #e74c3c;
+}
+
+#social-icons{
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#social-icons li{
+    display: inline-block;
+    padding-left: 5px;
+}
+
+#social-icons li a{
+    color: #fff;
+    font-size: 20px;
+}
+
+#social-icons li a:hover{
+    color: #e74c3c;
+}
+
+/* media query */
+
+@media (max-width: 992px) {
+    .news-post{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #menu{
+        float: none;
+        text-align: center;
+    }
+
+    .banner-title{
+        padding-top: 0;
+    }
+
+    .banner-title h1{
+        font-size: 1.5rem;
+    }
+
+    .section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .testimonial{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .service-box{
+        margin-bottom: 30px;
+    }
+
+    .footer-widget{
+        margin-bottom: 20px;
+    }
+
+    #footer{
+        text-align: center;
+    }
+
+    #social-icons{
+        float: none;
+        margin-top: 10px;
+    }
+}
